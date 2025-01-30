@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezervasyon Formu</title>
+    <link rel="stylesheet" href="rezervasyon.css">
+    <script src="mahosburger.js"></script>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Rezervasyon Formu</h2>
+        <form id="reservationForm" action="kaydet.php" method="post">
+            <table>
+                <tr>
+                    <td><label for="firstName">Adınız:</label></td>
+                    <td><input type="text" id="firstName" name="ad" placeholder="Adınızı girin" required></td>
+                </tr>
+                <tr>
+                    <td><label for="lastName">Soyadınız:</label></td>
+                    <td><input type="text" id="lastName" name="soyad" placeholder="Soyadınızı girin" required></td>
+                </tr>
+                <tr>
+                    <td><label for="phone">Telefon Numaranız:</label></td>
+                    <td><input type="tel" id="phone" name="telefon" placeholder="Telefon numaranızı girin" required></td>
+                </tr>
+                <tr>
+                    <td><label for="time">Geleceğiniz Saat:</label></td>
+                    <td><input type="time" id="time" name="saat" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Rezervasyon Yap</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div id="result"></div>
+    </div>
+
+</body>
+</html>

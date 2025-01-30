@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    flex-direction: column; /* Divleri dikey hizalar */
+    align-items: center; /* Yatayda ortalamak icin */
+    align-items: center; /* Dikeyde ortalama */
+    height: auto; /* Tam ekran yüksekliği */
+    margin: 0; /* Varsayılan boşlukları kaldır */
+    background-color: #fee8a1; /* Sayfa arka planı */
+    overflow-y: auto; /* Sayfa uzun olduğunda kaydırma çubuğu ekler */
+}
+
+h1{
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 750%;
+    font-weight:900;
+    margin: 0;
+}
+
+h2{
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 350%;
+    font-weight:900;
+    margin: 0;
+}
+
+p{
+    color:black;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 200%;
+    font-weight:200;
+    margin: 10px 0; /* Yazı ile başlık arasında mesafe */
+}
+
+.buton1{
+    width: 250px;
+    height: 120px;
+    background-color:gold; /* Yazının rengi */
+    color:brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 150%;
+    font-weight: 80;
+    position: absolute; /* Yazıyı resmin üzerine koyar */
+    top: 80%; /* Yatayda ortalamak için */
+    left: 50%; /* Yatayda ortalamak için */
+    transform: translate(-50%, -50%); /* Yükseklik ve yatayda tamamen ortalar */
+}
+
+.buton2{
+    background-color: black;
+    color: #f5f5f5;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    width: 50%;
+    height: 25%;
+}
+
+
+.div1Ozellik {
+    width:1300px; 
+    height:850px; 
+    background-color: gold; 
+    position:relative; /* İçindeki nesneyi konumlandırmak için relative */
+
+}
+
+.div1Ozellik img {
+    position: absolute; /* Resmin div içinde serbest konumlanabilmesi için */
+    bottom: 0; /* Divin tabanına yaslanır */
+    left: 50%; /* Yatayda ortalamak için */
+    transform: translateX(-50%); /* Sol kenarı değil, ortayı hizalamak için */
+    width: 80%; 
+    height:65%; 
+}
+
+.div2Ozellik {
+    width:1300px; 
+    height:850px; 
+    background-color: lightblue; 
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; /* Sol ve sağa yerleştirme */
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.div2Ozellik .resim {
+    width: 50%; 
+    display: flex;
+    justify-content: center; 
+}
+
+.div2Ozellik img {
+    width: 500px; /
+    height: auto;
+    border-radius: 15%;
+}
+
+.div2Ozellik .yazi {
+    width: 50%; 
+    text-align: center; 
+}
+
+.div2Ozellik .yazi h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 220%;
+    font-weight: 300;
+    color: black;
+}
+
+.div2Ozellik .yazi p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 180%;
+    font-weight: 300;
+    color: black;
+    line-height: 1.5;
+}
+
+.div3Ozellik {
+    width: 1300px;
+    height: 850px;
+    background-color:gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Sol bölüm */
+.sol-bolum {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Başlık ve butonu üstte hizalar */
+    align-items: flex-start;
+}
+
+.sol-bolum h2 {
+    margin: 0 0 10px 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    color: black;
+}
+
+.sol-bolum .buton {
+    padding: 10px 20px;
+    background-color: gold;
+    color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 150%;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Sağ bölüm */
+.sag-bolum {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.resim-kapsayici {
+    text-align: center;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resim-kapsayici img {
+    width: 100%; /* Resmin div genişliğini kaplaması */
+    height: auto;
+    border: 0;
+    border-radius: 15%;
+}
+
+.resim-kapsayici .yazi-div {
+    margin-top: 10px;
+    background-color: white;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 120%;
+    font-weight: bold;
+    width: 100%; /* Resim diviyle aynı genişlikte */
+    text-align: center;
+    border-radius: 15%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
